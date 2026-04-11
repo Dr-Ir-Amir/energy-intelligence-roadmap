@@ -1,0 +1,29 @@
+# --- Python & Django ---
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+db.sqlite3
+/static/
+/media/
+
+# --- PostgreSQL ---
+# We don't usually store Postgres data in the repo, 
+# but these prevent accidental log or backup uploads.
+*.sql
+*.dump
+pg_log/
+.pgpass
+
+# --- React / Frontend ---
+node_modules/
+/frontend/build/
+.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- Project Specific ---
+# Ignore the images folder since you're keeping that private/local
+../images/

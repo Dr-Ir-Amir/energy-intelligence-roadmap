@@ -24,6 +24,31 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# --- Data ---
+# Large data files (keep Parquet in repo for reproducibility, but not huge CSVs)
+data/raw/
+data/processed/*.csv
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# --- Scripts ---
+# Utility/build scripts — not part of the public repo
+scripts/
+
+# --- LinkedIn / Personal Content ---
+# Posts and personal content stay local
+docs/*_linkedin_post.md
+docs/*_post.md
+
+# --- Generated Charts ---
+# Chart PNGs are generated from the notebook — not tracked in git
+data/processed/*.png
+
+# --- Lock files ---
+requirements-lock.txt
+
 # --- Project Specific ---
 # Ignore the images folder since you're keeping that private/local
 ../images/
